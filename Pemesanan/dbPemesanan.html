@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+</style>
+
+
+<body>
+    <div class="container mx-auto">
+        <div class="mx-auto w-full lg:w-[1080px] flex">
+            <!-- navbar menu -->
+            <div class="flex w-[323px]">
+                <div class="items-center">
+                    <div class="flex flex-col items-center">
+                        <img src="assets/img/gambar.png" alt="" class="h-[98px] w-[123.36] mt-[67px]">
+                        <a href="#pemesanan" class="pt-[138.4px] pb-[57px] ">
+                            <span class="font-bold text-[30px] text-[#CCCCCC]">Jadwal</span>
+                        </a>
+                        <a href="#jadwal" class="rounded-l-[26px] bg-[#0055BA] flex justify-center">
+                            <span class="font-bold text-[30px] text-white px-[31px] py-[57px]">Pemesanan</span>
+                        </a>
+                        <a href="#pembayaran" class="pt-[57px]">
+                            <span class="font-bold text-[30px] text-[#CCCCCC]">Pembayaran</span>
+                        </a>
+                        <a href="#selesai" class="pt-[114px]">
+                            <span class="font-bold text-[30px] text-[#CCCCCC]">Selesai</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w-full bg-[#0055BA] pb-[327px] pr-[56px]">
+
+                <div class="mt-[67px] pl-[34px] pr-[35px] rounded-[35px] w-full ml-8 bg-white  ">
+                    <div class="pt-[55px]">
+                        <div class="h-[17px] w-[17px] rounded-full bg-[#FD0000] "></div>
+                        <img src="assets/img/arrow.png" class="pl-[6px]">
+                        <div class="h-[17px] w-[17px] rounded-full bg-[#D9D9D9]"></div>
+                    </div>
+                    <div class="" style="margin-top:-187px; margin-left:30px">
+                        <div class="font-bold text-[30px] text-[#0e0808]">Dipatiukur</div>
+                        <div class="text-[24px] text-[#6B6B6B] font-normal">Dipatiukur Pusat Bandung</div>
+                        <div class="flex  pt-[10px] items-center">
+                            <div class="text-[26px] text-[#0055BA] font-semibold">14 Maret 2023</div>
+                            <div class="flex items-center pl-[17px]">
+                                <div class="h-[17px] w-[17px] rounded-full bg-[#CFE5FF]"></div>
+                                <div class="text-[28px] text-[#0055BA] font-semibold pl-[19px]">13:00</div>
+                            </div>
+                            <div class="flex items-center pl-[20px]">
+                                <div class="h-[17px] w-[17px] rounded-full bg-[#CFE5FF]"></div>
+                                <div class="text-[24px] text-[#0055BA] font-normal pl-[16px]">Estimasi <span class="text-[24px] text-[#0055BA] font-semibold">3</span> Jam</div>
+                            </div>
+                        </div>
+                        <div class="font-bold pt-[23px] text-[30px] pb-1">Blora</div>
+                        <div class="font-normal text-2xl text-[#6B6B6B]">Jalan Blora Jakarta</div>
+                    </div>
+                    <div class="flex justify-between items-center  pb-[29px]">
+                        <div class="font-bold text-4xl pt-[21px] text-[#000000]">Rp. 150.000 <span class="text-[26px] text-[#000000] font-medium">x1</span></div>
+                        <button class="bg-[#FF2E00] rounded-[37px] font-semibold text-[30px] py-[14px] text-[#ffffff] px-[22px]">Ganti</button>
+                    </div>
+
+                </div>
+
+                <!-- Ordering Information -->
+                <div class="mt-[24px] rounded-[35px] w-full ml-8 bg-white mb-[40px] ]">
+
+                    <div class="ml-[34px] pt-[33.59px] border-1 border-[#858585]">
+                        <div class="font-medium text-[#000000] text-[36px]">Informasi Pemesanan</div>
+                    </div>
+
+                    <!-- Input No Telephone -->
+                    <div class="pl-[40px] pb-[70px] pt-6 pr-8">
+                        <input type="text" id="name" class="w-full border font-medium border-[#858585] rounded-[11px] pl-[32px] pr-[55.06x] py-[30px] text-[36px]" placeholder=" Masukkan Nomor Telepon ">
+                    </div>
+                    <div class="">
+                        <div class="flex justify-center pb-[50px] ">
+                            <div class="rounded-[12px] border-[2px]  font-bold border-[#858585] text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                                1
+                            </div>
+                            <div class="ml-[50px] rounded-[12px] border-[2px]  font-bold border-[#858585] text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                                2
+                            </div>
+                            <div class="ml-[50px] rounded-[12px] border-[2px]  font-bold border-[#858585] text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                                3
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center pb-[50px] ">
+                            <div class="rounded-[12px] border-[2px]  font-bold border-[#858585] text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                                4
+                            </div>
+                            <div class="ml-[50px] rounded-[12px] border-[2px]  font-bold border-[#858585] text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                                5
+                            </div>
+                            <div class="ml-[50px] rounded-[12px] border-[2px]  font-bold border-[#858585] text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                                6
+                            </div>
+                        </div>
+
+
+                        <div class="flex justify-center  pb-[50px] ">
+                            <div class="rounded-[12px] border-[2px]  font-bold border-[#858585] text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                                7
+                            </div>
+                            <div class="ml-[50px] rounded-[12px] border-[2px]  font-bold border-[#858585] text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                                8
+                            </div>
+                            <div class="ml-[50px] rounded-[12px] border-[2px]  font-bold border-[#858585] text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                                9
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center pb-[50px] ">
+                            <div class="rounded-[12px] font-bold  text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                            </div>
+                            <div class="ml-[50px] rounded-[12px] border-[2px]  font-bold border-[#858585] text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                                0
+                            </div>
+                            <div class="ml-[50px] rounded-[12px] font-bold border-[#858585] text-[48px] flex justify-center items-center w-[100px] h-[100px]">
+                                <img src="assets/img/clear.png">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Next -->
+                    <div class="flex justify-center  pb-[30px] px-[23px]">
+                        <div class="flex justify-center py-[41px] w-full rounded-[26px] bg-[#00990F] ">
+                            <a href="# " class="font-bold text-4xl text-[#FFFFFF] text-[] ">Lanjutkan</a>
+                            <img src="assets/img/next.png " class="pl-[16.25px] ">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End Ordering Information -->
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+</style>
+
+
+<body>
+    <div class="container mx-auto">
+        <div class="mx-auto w-full lg:w-[1080px] flex">
+            <!-- navbar menu -->
+            <div class="flex w-[323px]">
+                <div class="items-center">
+                    <div class="flex flex-col items-center ">
+                        <img src="assets/img/gambar.png" alt="" class="h-[130px] w-[123.36] mt-[67px]">
+                        <a href="#jadwal" class="rounded-l-[26px] bg-[#0055BA] px-[80px] py-[57px] mt-[81.4px] flex items-center justify-center">
+                            <span class="font-bold text-[30px] text-white">Jadwal</span>
+                        </a>
+                        <a href="#pemesanan" class="pt-[57px]">
+                            <span class="py-[57px] font-bold text-[30px] text-[#CCCCCC]">Pemesanan</span>
+                        </a>
+                        <a href="#pembayaran" class="pt-[114px]">
+                            <span class="py-[57px] font-bold text-[30px] text-[#CCCCCC]">Pembayaran</span>
+                        </a>
+                        <a href="#selesai" class="pt-[114px]">
+                            <span class="py-[57px] font-bold text-[30px] text-[#CCCCCC]">Selesai</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asal -->
+            <div class="w-full bg-[#0055BA]  pb-[40px]  pr-[56px]">
+                <div class="mt-[67px] rounded-[35px] pb-[31px]  w-full ml-8 bg-white">
+                    <div class="ml-[34px] pt-6">
+                        <a class=" font-medium text-[36px] text-[#000000]">Asal</a>
+                        <div class="flex justify-between items-center pr-[44px]">
+                            <a href="#" class="text-[50px] font-bold text-[#000000]">
+                              Dipatiukur
+                            </a>
+                            <a href="#" class="font-bold text-[#0056A5] text-[30px]">
+                                UBAH
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tujuan -->
+                <div class="mt-[24px] rounded-[35px] pb-[35px] w-full ml-8 bg-white">
+                    <div class="ml-[37px] pt-[29px]">
+                        <a class=" font-medium text-[36px] text-[#000000]">Tujuan Kemana ?</a>
+                        <div class="flex justify-between items-center  pr-[44px]">
+                            <a href="#" class="text-[50px] font-bold text-[#000000]">
+                              Blora
+                            </a>
+                            <a href="#" class="font-bold text-[#0056A5] text-[30px]">
+                                UBAH
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jadwal -->
+                <div class="mt-[24px] rounded-[35px] pb-6  w-full ml-8 bg-white ">
+                    <div class="ml-[54px] pt-[28.42px] pr-[44px]">
+                        <a class=" font-medium text-[36px]  text-[#000000]">Kapan Berangkat ?</a>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-[50px] font-bold text-[#000000]">
+                              Hari Ini
+                            </a>
+                            <a href="#" class="font-bold text-[#0056A5] text-[30px]">
+                                UBAH
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Posisi Duduk -->
+
+                <div class="mt-[24px] rounded-[35px] w-full ml-8 bg-white ">
+                    <div class="flex justify-start pt-[33px] pl-[44.81px] items-center">
+                        <img src="assets/img/left.png" class="h-10">
+                        <div class="font-medium text-[#000000] pl-[21.25px] pr-[251px] text-[36px]">Pilih Posisi Duduk</div>
+                        <img src="assets/img/vector.png" class="">
+                    </div>
+
+                    <!-- Keterangan -->
+                    <div class="flex pb-[55px] justify-between pt-[59px] pl-[89px] pr-[72px]">
+                        <img src="assets/img/terisi.png" class="w-[33px] h-[33px] ">
+                        <div class="text-[26px] text-[#000000] font-semibold pr-[23px]">Terisi</div>
+                        <div class="h-[33px] w-[33px] rounded-[6px] border-2 border-[#B5B5B5] pl-[30px]"></div>
+                        <div class="text-[26px] text-[#000000] font-semibold pr-[20px]">Tersedia</div>
+                        <div class="bg-[#0056A5]  border-1 h-[33px] w-[33px] pl-[30px] rounded-[6px] "></div>
+                        <div class="text-[26px] text-[#000000] font-semibold pr-[20px]">Dipilih</div>
+                    </div>
+
+                    <div class="text-center pb-[22px]">
+                        <span class="text-[22px] text-[#6D6D6D] font-medium">Jenis Kendaraan Hiace</span>
+                    </div>
+
+                    <div class="flex justify-center pb-[33px]">
+                        <div class="bg-[#FFF7EE] w-[330px] rounded-[41px] text-center mx-auto">
+                            <div class="text-[30px] text-[#FE8900] font-semibold py-[5px]">Depan</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Seat 1  -->
+                    <div class="flex justify-between pl-[200px] pr-[200px] pb-[30px] ">
+                        <div class="w-[95px] h-[95px] rounded-[15px] border-[2px] border-[#B5B5B5] font-bold text-4xl flex items-center justify-center">
+                            1
+                        </div>
+                        <div class="rounded-[54px] bg-[#F3F3F3] ">
+                            <div class="py-[26.5px] px-[38.9px] font-bold text-4xl ">S</div>
+                        </div>
+                    </div>
+
+                    <!-- Seat 2 -->
+                    <div class="flex justify-between pb-[30px] pl-[200px] pr-[200px] ">
+                        <div class="pr-[85px] ">
+                            <div></div>
+                        </div>
+                        <div class="w-[95px] h-[95px] rounded-[15px] border-[2px] border-[#B5B5B5] font-bold text-4xl flex items-center justify-center">
+                            2
+                        </div>
+                        <div class="w-[95px] h-[95px] rounded-[15px] border-[2px] border-[#B5B5B5] font-bold text-4xl flex items-center justify-center">
+                            3
+                        </div>
+                    </div>
+
+                    <!-- Seat 3 -->
+                    <div class="flex justify-between pb-[30px] pl-[200px] pr-[200px] ">
+                        <div class="rounded-[15px] ">
+                            <img src="assets/img/terisi.png " class="w-[90px] h-[90px] ">
+                        </div>
+                        <div class="w-[95px] h-[95px] rounded-[15px] border-[2px] border-[#B5B5B5] bg-[#0056A5] font-bold text-4xl flex items-center justify-center">
+                            4
+                        </div>
+                    </div>
+
+                    <!-- Seat 4 -->
+                    <div class="flex justify-between pl-[200px] pr-[200px] pb-[280px] ">
+                        <div class="w-[95px] h-[95px] rounded-[15px] border-[2px] border-[#B5B5B5] font-bold text-4xl flex items-center justify-center">
+                            6
+                        </div>
+                        <div class="w-[95px] h-[95px] rounded-[15px] border-[2px] border-[#B5B5B5] font-bold text-4xl flex items-center justify-center">
+                            7
+                        </div>
+                        <div class="w-[95px] h-[95px] rounded-[15px] border-[2px] border-[#B5B5B5] font-bold text-4xl flex items-center justify-center">
+                            8
+                        </div>
+                    </div>
+
+                    <!-- Harga -->
+                    <div class="font-semibold pb-[39px] pl-[37px] text-[36px] text-[#000000]">Rp.150.000
+                        <span class="text-[26px] pl-[9px] text-[#000000] font-medium">x1</span>
+                    </div>
+
+                    <!-- Next -->
+                    <div class="flex justify-center px-[23px] items-center pb-[30px]">
+                        <div class="flex justify-center w-full rounded-[26px] bg-[#00990F]">
+                            <div class="flex items-center py-[37px]">
+                                <a href="#" class="font-bold text-4xl text-[#FFFFFF]">Lanjutkan</a>
+                                <img src="assets/img/next.png" class="pl-[16.25px]">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
