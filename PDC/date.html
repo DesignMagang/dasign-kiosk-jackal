@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasboard Menu</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    body {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .back {
+        box-shadow: 0px 4px 4px 0px #9E9E9E26;
+    }
+    
+    .pilih-waktu {
+        background: linear-gradient(180deg, #E1F9F8 0%, #E1F2F9 100%);
+    }
+    
+    .waktu {
+        background: linear-gradient(90deg, #048575 0%, #045785 100%);
+    }
+    
+    .jam {
+        background: linear-gradient(90deg, #048575 4.76%, #045785 100%);
+    }
+    
+    .jam-kedua {
+        background: linear-gradient(0deg, #D6D6D6, #D6D6D6), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+        border: #D6D6D6;
+    }
+    
+    .jam-ketiga {
+        background: linear-gradient(0deg, #989898, #989898), linear-gradient(0deg, #D6D6D6, #D6D6D6);
+        border: 1px solid #D6D6D6
+    }
+    
+    .kelamin {
+        border: 1px solid #E0E0E0
+    }
+    
+    .taggal {
+        background: linear-gradient(0deg, #E0E0E0, #E0E0E0), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+        border: 1px solid #E0E0E0
+    }
+    
+    .keluhan {
+        border: 1px solid #939393
+    }
+    
+    footer {
+        box-shadow: 0px -2px 4px 0px #C9C9C940;
+        background: #ffffff;
+    }
+    
+    .booking {
+        background: linear-gradient(90deg, #048575 0%, #045785 100%);
+        margin-top: 15px;
+        position: relative;
+        top: 15px;
+    }
+</style>
+
+<body>
+    <div class="container mx-auto">
+        <div class="mx-auto justify-center bg-slate-10 w-[375px] lg:w-[375px]">
+            <div class="mt-[20px]">
+                <div class="flex justify-start items-center back w-[375px] h-[30px] bg-slate-5 pb-[16.5px]">
+                    <img src="dist/img/left.png" class="mr-[17.5px] h-auto ml-[16px]">
+                    <div class="font-bold text-[14px] text-[#404959] ">Pilih Jadwal</div>
+                </div>
+
+                <div class="flex justify-start items-center mt-5 ml-4">
+                    <img src="dist/img/destination.png" style="height:88px; width:101px">
+                    <div class="items-center ml-5 ">
+                        <div class="font-bold text-[14px]">Rumah Sakit Advent</div>
+                        <div class="font-normal text-[10px] text-[#606060] ">Jl. Cihampelas No.161, Cipaganti, Kecamatan </div>
+                        <div class="font-normal text-[10px] text-[#606060] ">Coblong, Kota Bandung, Jawa Barat 40131</div>
+                        <div class="flex items-center mt-[6.5px]">
+                            <i class="bi bi-geo-alt-fill" style="color:#06376C"></i>
+                            <div class="font-bold text-[12px] text-[#06376C] ml-1">Lihat Peta</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Lokasi  -->
+                <div class="flex justify-center px-4 mt-5">
+                    <div class="">
+                        <div class=" text-[14px] text-[#06376C] font-bold text-center">Booking</div>
+                        <div class="border-[#06376C] border-[2px] w-[171px] mt-[7px]"></div>
+                    </div>
+                    <div class="">
+                        <div class=" text-[14px] text-[#606060] font-bold text-center">Info Jadwal Dokter</div>
+                        <div class="border-[#D4D4D4] border-[2px] w-[171px] mt-[7px]"></div>
+                    </div>
+                </div>
+
+
+                <!-- Pilih Tanggal Dan Waktu -->
+                <div class="pilih-waktu mt-5 px-4 pb-4">
+                    <div class="pt-4 ml-4">
+                        <div class="font-bold text-[12px] text-[#1F1F1F]">Pilih Tanggal Dan Waktu</div>
+                        <div class="bg-[#ffffff] mt-[5px] px-3 pt-3 pb-3 rounded-[6px]">
+                            <div class="waktu rounded-[6px] py-3 flex justify-center">
+                                <div class="text-[#ffffff] font-bold text-[12px]">15 Juli 2023<span><i class="bi bi-chevron-down font-bold ml-1 fill-current" style="color:#ffffff"></i></span></div>
+                            </div>
+                            <div class="text-[#1F1F1F] font-bold text-[14px] mt-[15px]">Siang</div>
+
+                            <div class="flex justify-start">
+                                <div class="jam rounded-[6px] py-[10px] px-4 flex justify-center">
+                                    <div class="text-[#ffffff] font-bold text-[12px]">13:00</div>
+                                </div>
+                                <div class="jam-kedua border-[1px] rounded-[6px] py-[10px] px-4 mx-3 flex justify-center">
+                                    <div class="text-[#787878] font-bold text-[12px]">14:00</div>
+                                </div>
+                                <div class="jam-ketiga rounded-[6px] py-[10px] px-4 flex justify-center">
+                                    <div class="text-[#EFEFEF] font-bold text-[12px]">15:00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-[#3D3D3D] font-normal text-[12px] mt-[10px]">*waktu dapat berubah jika terjadi situasi urgent
+                        </div>
+
+                        <div class=" font-bold text-[14px] mt-4">Isi Data Diri</div>
+
+
+                        <!-- Data Pasien -->
+                        <div class="bg-[#ffffff] mt-[9px] px-3 rounded-[6px]">
+                            <div class="flex items-center pt-[14px]">
+                                <label for="myCheckbox" class="text-[#000000] text-end mr-[10px] text-[12px] font-medium w-[319px]">User adalah Pasien</label>
+                                <input type="checkbox" id="myCheckbox">
+                            </div>
+                            <div class="mt-[10px]">
+                                <div class="text-[#1F1F1F] font-bold text-[14px]">Nama Pasien</div>
+                                <input type="text" class="border-[#939393] border-[1px] rounded-[8px] placeholder:text-[14px]  placeholder:font-normal pl-[10px] py-[10px] mt-2 w-full" placeholder="Masukan Nama Pasien">
+
+                                <div class="mt-[14px]">
+                                    <label class="text-[#000000] font-bold text-[16px]">Jenis Kelamin</label>
+                                    <div class="flex justify-between items-center pt-[6px]">
+                                        <div class="relative w-full items-center">
+                                            <input type="email" id="name" class="kelamin w-full border  font-medium border-[#858585] rounded-[6px] pl-[10px] text-[16px] pr-[] py-[10px] placeholder-[#8B8B8B]" placeholder="Pilih jenis kelamin">
+                                            <span class="absolute right-[10px] top-[50%] transform translate-y-[-50%]">                                            
+                                            <img src="dist/img/down-2.png" alt="" class="">
+                                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-[14px]">
+                                    <label class="text-[#000000] font-bold text-[16px]">Tanggal Lahir</label>
+                                    <div class="flex justify-between items-center pt-[6px]">
+                                        <div class="relative w-full items-center">
+                                            <input type="email" id="name" class="tanggal w-full border  font-medium border-[#858585] rounded-[6px] pl-[10px] text-[16px] py-[10px] placeholder-[#8B8B8B]" placeholder="Pilih Tanggal">
+                                            <span class="absolute right-[10px] top-[50%] transform translate-y-[-50%]">                                         
+                                            <img src="dist/img/down-2.png" alt="" class="">
+                                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-[14px]">
+                                    <label class="text-[#1F1F1F] font-bold text-[14px]">Keluhan</label>
+                                    <div class="flex justify-between items-center pt-[8px]">
+                                        <div class="relative w-full items-center">
+                                            <input type="email" id="name" class="keluhan w-full border  font-normal border-[#858585] rounded-[6px] pl-[10px] text-[16px] py-[10px] placeholder-[#8B8B8B]" placeholder="Pilih Keluhan">
+                                            <span class="absolute right-[10px] top-[50%] transform translate-y-[-50%]">
+                                            <img src="dist/img/down-2.png" alt="" class="">
+                                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- footer -->
+                <footer class="mt-[211px]  items-center rounded-t-[20px] px-4 pb-[45px]">
+                    <div class="booking  flex rounded-[7px] justify-center items-center">
+                        <div class="text-center text-sm font-bold text-[#ffffff] py-[14px]">Booking </div>
+                        <img src="dist/img/right-two.png" class="ml-2">
+                    </div>
+                </footer>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
