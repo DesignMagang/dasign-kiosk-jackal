@@ -35,11 +35,6 @@
         background: linear-gradient(90deg, #048575 4.76%, #045785 100%);
     }
     
-    .jam-kedua {
-        background: linear-gradient(0deg, #D6D6D6, #D6D6D6), linear-gradient(0deg, #FFFFFF, #FFFFFF);
-        border: #D6D6D6;
-    }
-    
     .jam-ketiga {
         background: linear-gradient(0deg, #989898, #989898), linear-gradient(0deg, #D6D6D6, #D6D6D6);
         border: 1px solid #D6D6D6
@@ -68,6 +63,21 @@
         margin-top: 15px;
         position: relative;
         top: 15px;
+    }
+    
+    .select-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .select-wrapper .arrow-icon {
+        position: absolute;
+        right: 1px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        background-color: white;
+        /* align-items: center; */
     }
 </style>
 
@@ -121,7 +131,7 @@
                                 <div class="jam rounded-[6px] py-[10px] px-4 flex justify-center">
                                     <div class="text-[#ffffff] font-bold text-[12px]">13:00</div>
                                 </div>
-                                <div class="jam-kedua border-[1px] rounded-[6px] py-[10px] px-4 mx-3 flex justify-center">
+                                <div class="border-[1px] rounded-[6px] py-[10px] px-4 mx-3 flex justify-center">
                                     <div class="text-[#787878] font-bold text-[12px]">14:00</div>
                                 </div>
                                 <div class="jam-ketiga rounded-[6px] py-[10px] px-4 flex justify-center">
@@ -137,47 +147,73 @@
 
 
                         <!-- Data Pasien -->
-                        <div class="bg-[#ffffff] mt-[9px] px-3 rounded-[6px]">
-                            <div class="flex items-center pt-[14px]">
+                        <div class="bg-[#ffffff] mt-[9px] px-3 rounded-[6px] pb-3">
+                            <div class="flex items-center pt-[12px]">
                                 <label for="myCheckbox" class="text-[#000000] text-end mr-[10px] text-[12px] font-medium w-[319px]">User adalah Pasien</label>
                                 <input type="checkbox" id="myCheckbox">
                             </div>
                             <div class="mt-[10px]">
                                 <div class="text-[#1F1F1F] font-bold text-[14px]">Nama Pasien</div>
-                                <input type="text" class="border-[#939393] border-[1px] rounded-[8px] placeholder:text-[14px]  placeholder:font-normal pl-[10px] py-[10px] mt-2 w-full" placeholder="Masukan Nama Pasien">
+                                <input type="text" class="border-[#939393] border-[1px] rounded-[8px] placeholder:text-[14px]  placeholder:font-normal pl-[10px] py-[10px] outline-none mt-2 w-full" placeholder="Masukan Nama Pasien">
 
                                 <div class="mt-[14px]">
+                                    <!-- <div class="relative w-full items-center">
+                                        <input type="" id="name" class="kelamin w-full border  font-medium border-[#858585] rounded-[6px] pl-[10px] text-[16px] pr-[] py-[10px] placeholder-[#8B8B8B]" placeholder="Pilih jenis kelamin">
+                                        <span class="absolute right-[10px] top-[50%] transform translate-y-[-50%]">                                            
+                                        <img src="dist/img/down-silver.svg" alt="" class="">
+                                       </span>
+                                    </div> -->
                                     <label class="text-[#000000] font-bold text-[16px]">Jenis Kelamin</label>
-                                    <div class="flex justify-between items-center pt-[6px]">
-                                        <div class="relative w-full items-center">
-                                            <input type="email" id="name" class="kelamin w-full border  font-medium border-[#858585] rounded-[6px] pl-[10px] text-[16px] pr-[] py-[10px] placeholder-[#8B8B8B]" placeholder="Pilih jenis kelamin">
-                                            <span class="absolute right-[10px] top-[50%] transform translate-y-[-50%]">                                            
-                                            <img src="dist/img/down-silver.svg" alt="" class="">
-                                           </span>
-                                        </div>
+                                    <div class="select-wrapper auto relative items-center mt-[6px]">
+                                        <select id="jk" name="jk" class="border font-medium border-[#858585] rounded-[6px] pl-[7px] pr-[30px] outline-none text-[16px] py-[10px] w-[319px]">
+                                            <option value="" class="text-[#8B8B8B] text-base">Pilih jenis kelamin</option>
+                                            <option value="lk" class="">Laki-Laki</option>
+                                            <option value="pr">Perempuan</option>
+                                        </select>
+                                        <span class="arrow-icon mt-[px]">
+                                            <img src="dist/img/downi-silver-2.svg" alt="" class=" w-[30px] h-[23px] pr-[15px]">
+                                        </span>
                                     </div>
                                 </div>
+
+
                                 <div class="mt-[14px]">
                                     <label class="text-[#000000] font-bold text-[16px]">Tanggal Lahir</label>
                                     <div class="flex justify-between items-center pt-[6px]">
                                         <div class="relative w-full items-center">
-                                            <input type="email" id="name" class="tanggal w-full border  font-medium border-[#858585] rounded-[6px] pl-[10px] text-[16px] py-[10px] placeholder-[#8B8B8B]" placeholder="Pilih Tanggal">
-                                            <span class="absolute right-[10px] top-[50%] transform translate-y-[-50%]">                                         
-                                            <img src="dist/img/down-silver.svg" alt="" class="">
+                                            <input type="" id="name" class="tanggal w-full border  font-medium border-[#858585] rounded-[6px] pl-[10px] text-[16px] outline-none py-[10px] placeholder-[#8B8B8B]" placeholder="Pilih Tanggal">
+                                            <span class="absolute right-[15px] top-[50%] transform translate-y-[-50%]">                                         
+                                            <img src="dist/img/down-silver.svg" alt="" class="h-[12px]">
                                            </span>
                                         </div>
                                     </div>
                                 </div>
+
+
                                 <div class="mt-[14px]">
                                     <label class="text-[#1F1F1F] font-bold text-[14px]">Keluhan</label>
-                                    <div class="flex justify-between items-center pt-[8px]">
+                                    <div class="select-wrapper auto relative items-center mt-2">
+                                        <select id="jk" name="jk" class="border font-medium border-[#858585] rounded-[6px] pl-[7px] pr-[30px] outline-none text-[16px] py-[10px] w-[319px]">
+                                            <option value="" class="text-[14px] font-bold">Pilih Keluhan</option>
+                                            <option value="" class="text-[14px]">Veneer Gigi</option>
+                                            <option value="" class="text-[14px]">Behel Gigi</option>
+                                            <option value="" class="text-[14px]">Gigi Tiruan</option>
+                                            <option value="" class="text-[14px]">Bleaching</option>
+                                            <option value="" class="text-[14px]">Tambalan Estetis</option>
+                                            <option value="" class="text-[14px]">Lainnya</option>
+                                        </select>
+                                        <span class="arrow-icon mt-[px]">
+                                            <img src="dist/img/downi-silver-2.svg" alt="" class=" w-[30px] h-[23px] pr-[15px]">
+                                        </span>
+                                    </div>
+                                    <!-- <div class="flex justify-between items-center pt-[8px]">
                                         <div class="relative w-full items-center">
-                                            <input type="email" id="name" class="keluhan w-full border  font-normal border-[#858585] rounded-[6px] pl-[10px] text-[16px] py-[10px] placeholder-[#8B8B8B]" placeholder="Pilih Keluhan">
+                                            <input type="text" id="name" class="keluhan w-full border  font-normal border-[#858585] rounded-[6px] pl-[10px] text-[16px] py-[10px] placeholder-[#8B8B8B]" placeholder="Pilih Keluhan">
                                             <span class="absolute right-[10px] top-[50%] transform translate-y-[-50%]">
                                             <img src="dist/img/down-silver.svg" alt="" class="">
                                            </span>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                             </div>
