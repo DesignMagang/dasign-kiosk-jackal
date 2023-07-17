@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    body {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .screen {
+        background: #B5F3F2;
+        height: 137px;
+    }
+    
+    .selesai {
+        background: linear-gradient(90deg, #048575 0%, #045785 100%);
+        margin-top: 3px;
+    }
+</style>
+
+<body>
+    <div class="container mx-auto">
+        <div class="screen mx-auto justify-center w-[375px] lg:w-[375px]">
+            <div class=" pt-[42px]">
+                <div class=" mx-[137.5px] rounded-t-full">
+                    <img src="dist/img/love.svg" class="mx-auto">
+                </div>
+                <div class="text-center bg-[#fff]">
+                    <div class="font-bold text-[32px] text-[#000000] mt-[10px]">Daftar</div>
+                    <div class="font-medium text-[14px] text-[#5A5A5A] mt-[6px]">Harap Daftar untuk melanjutkan</div>
+                </div>
+            </div>
+
+            <!-- Daftar -->
+            <div class="mx-4">
+                <!-- Nama -->
+                <label class="text-[#1F1F1F] font-bold text-[16px]">Nama</label>
+                <div class="flex justify-between items-center pt-[6px]">
+                    <div class="relative w-full items-center">
+                        <input type="text" id="name" class="w-full border  font-medium border-[#BFBFBF] rounded-[6px] pl-[10px] text-[16px] py-[10px] text-[#1F1F1F] placeholder-[#8B8B8B]" placeholder="Friendly Sitepu">
+                    </div>
+                </div>
+
+                <!-- Jenis Kelamin -->
+                <div class="text-base font-bold text-[#1F1F1F] mt-4">Jenis Kelamin</div>
+                <div class="mt-[6px] pb-4">
+                    <div class="flex justify-between items-center  border-[1px] border-[#BFBFBF] px-[10px] py-[10px] text-[#8B8B8B] text-[16px] font-medium rounded-[6px] mt-[6px]">
+                        <div class="">Pilih jenis kelamin</div>
+                        <img src="dist/img/down-silver.svg" alt="" class="">
+                    </div>
+                </div>
+
+                <!-- Nomor Ponsel -->
+                <label class="text-[#1F1F1F] font-bold text-[16px]">Nomor Ponsel</label>
+                <div class="mt-[6px] relative w-full items-center text-base text-[#1F1F1F] font-medium pb-4">
+                    <input type="number" id="number" class="w-full border border-[#BFBFBF] rounded-[6px] pl-[10px] text-[16px] py-[10px] text-[#1F1F1F] placeholder-[#1F1F1F]" placeholder="+62   |    xxxxxx ">
+                </div>
+
+                <!-- Nomor Ponsel 2 -->
+                <label class="text-[#1F1F1F] font-bold text-[16px]">Nomor Ponsel 2</label>
+                <div class="text-[#6C6C6C] font-medium text-[10px]">*Optional</div>
+                <div class="mt-[6px] relative w-full items-center text-base text-[#1F1F1F] font-medium pb-4">
+                    <input type="number" id="number" class="w-full border border-[#BFBFBF] rounded-[6px] pl-[10px] text-[16px] py-[10px] text-[#1F1F1F] placeholder-[#1F1F1F]" placeholder="+62   |    xxxxxx ">
+                </div>
+
+                <!-- Tempat Lahir -->
+                <div class="text-base font-bold text-[#1F1F1F]">Tempat Lahir</div>
+                <div class="mt-[6px] pb-4">
+                    <div class="flex justify-between items-center  border-[1px] border-[#BFBFBF] px-[10px] py-[10px] text-[#1F1F1F] text-[16px] font-medium rounded-[6px] mt-[6px]">
+                        <div class="">Bandung</div>
+                        <img src="dist/img/down-silver.svg" alt="" class="">
+                    </div>
+                </div>
+
+                <div class="text-base font-bold text-[#1F1F1F]">Tanggal Lahir</div>
+                <div class="mt-[6px] pb-4">
+                    <div class="flex justify-between items-center  border-[1px] border-[#BFBFBF] px-[10px] py-[10px] text-[#1F1F1F] text-[16px] font-medium rounded-[6px] mt-[6px]">
+                        <div class="">14 Juni 2000</div>
+                        <img src="dist/img/down-silver.svg" alt="" class="">
+                    </div>
+                </div>
+
+                <!-- Alamat -->
+                <label class="text-[#1F1F1F] font-bold text-[16px]">Alamat</label>
+                <div class="mt-[6px] relative w-full items-center text-base text-[#1F1F1F] font-medium pb-4">
+                    <input type="text" id="alamat" class="w-full border border-[#BFBFBF] rounded-[6px] pl-[10px] text-[16px] py-[10px] text-[#1F1F1F] placeholder-[#1F1F1F]" placeholder="Jl.Setraria, Bandung">
+                </div>
+
+                <!-- Pekerjaan -->
+                <label class="text-[#1F1F1F] font-bold text-[16px]">Pekerjaan</label>
+                <div class="mt-[6px] relative w-full items-center text-base text-[#1F1F1F] font-medium pb-4">
+                    <input type="text" id="pekerjaan" class="w-full border border-[#BFBFBF] rounded-[6px] pl-[10px] text-[16px] py-[10px] text-[#1F1F1F] placeholder-[#8B8B8B]" placeholder="Jika ada">
+                </div>
+
+                <!-- Keterangan -->
+                <label class="text-[#1F1F1F] font-bold text-[16px]">Keterangan</label>
+                <div class="mt-[6px] relative w-full items-center text-base text-[#1F1F1F] font-medium">
+                    <textarea name="" id="keterangan" cols="30" rows="" class="tanggal w-full border border-[#BFBFBF] rounded-[6px] pl-[10px] text-[16px] pt-[10px] pb-[20px] text-[#1F1F1F] placeholder-[#8B8B8B]" placeholder="Optional"></textarea>
+                </div>
+
+                <footer class="items-center rounded-t-[20px] pb-[40px]">
+                    <div class="flex rounded-[7px] justify-center items-center selesai">
+                        <div class="text-center text-sm font-bold text-[#ffffff] py-[14px]">Selesai</div>
+                        <img src="dist/img/right-two.svg" class="ml-2">
+                    </div>
+                </footer>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
